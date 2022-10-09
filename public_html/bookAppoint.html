@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+  <title>Appointment form</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<header>
+  <div class="header">
+    <a href="index.html" class="logo"> <img src="logo.png" height="50" width="60"></a>
+    <a href="index.html" class="name" style="font-family:Brush Script MT ; font-size: 30px">AngelCare Hospital</a>
+    <div class="header-right">
+
+      <a href="index.html" class="onHover">Home</a>
+      &emsp; &emsp; &emsp;
+
+
+      <a href="about.html" class="onHover">About</a>
+      &emsp; &emsp;
+      <a href="login.html" class="onHover">Login</a>
+      &emsp; &emsp; &emsp;
+
+
+      <a href="newuser.html" class="onHover">Register</a>
+      &emsp; &emsp;
+
+    </div>
+  </div>
+</header>
+
+<img src="book.png" id="main"/>
+
+<div class="bookingrow">
+  <div class="bookingcolumn">
+
+    <h1> 3 Easy steps to Meet your Online doctor</h1>
+
+    <h3>Step 1:</h3>
+    <p>Schedule an online doctor appointment by filling the form.</p>
+    <br>
+    <img src="app.png" height="250" width="350">
+
+    <h3>Step 2:</h3>
+    <p>Discuss your problems with the Doctor.</p>
+    <br>
+    <img src="online.jpg"  height="250" width="350">
+
+
+
+    <h3>Step 3:</h3>
+    <p>Get your prescription.</p>
+    <img src="prescrip.jpg" height="250" width="350">
+  </div>
+  <div class="bookingcolumn1">
+
+    <h1><center>Book an Appointment</center></h1>
+
+    <form action="#" method="get">
+      <label for="fn">First name:</label><br>
+      <input type="text" id="fn" name="fn"><br>
+
+      <label for="ln">Last name:</label><br>
+      <input type="text" id="ln" name="ln"><br>
+
+      <label> Gender:</label>
+      <input type="radio" id="female" name="female" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="male" name="male" value="male">
+        <label for="male">Male</label>
+      <input type="radio" id="others" name="others" value="others">
+        <label for="others">Others</label>
+      <br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+
+      <label for="phone">Phone number:</label><br>
+      <input type="tel" id="phone" name="phone"><br>
+      <label for="Ad1">Street Address:</label><br>
+      <input type="text" id="Ad1" name="Ad1"><br>
+
+      <label for="Ad2">Street Address Line 2:</label><br>
+      <input type="text" id="Ad2" name="Ad2"><br>
+
+      <label for="city">City:</label><br>
+      <input type="text" id="city" name="city"><br>
+
+      <label for="st">State</label><br>
+      <select name="st" id="st">
+        <option value="null">Select state</option>
+        <option value="Alabama">Alabama</option>
+        <option value="Alaska">Alaska</option>
+        <option value="Arizona">Arizona</option>
+        <option value="Arkansas">Arkansas</option>
+        <option value="California">California</option>
+        <option value="Colorado">Colorado</option>
+        <option value="Connecticut">Connecticut</option>
+        <option value="Delaware">Delaware</option>
+        <option value="Florida">Florida</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Idaho">Idaho</option>
+        <option value="Illinois">Illinois</option>
+        <option value="Indiana">Indiana</option>
+        <option value="Iowa">Iowa</option>
+        <option value="Kansas">Kansas</option>
+        <option value="Kentucky">Kentucky</option>
+        <option value="Louisiana">Louisiana</option>
+        <option value="Maine">Maine</option>
+        <option value="Massachusetts">Massachusetts</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Minnesota">Minnesota</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="Mississippi">Mississippi</option>
+        <option value="Missouri">Missouri</option>
+        <option value="Montana">Montana</option>
+        <option value="Nebraska">Nebraska</option>
+        <option value="Nevada">Nevada</option>
+        <option value="New Hampshire">New Hampshire</option>
+        <option value="New Jersey">New Jersey</option>
+        <option value="New Mexico">New Mexico</option>
+        <option value="New York">New York</option>
+        <option value="North Carolina">North Carolina</option>
+        <option value="North Dakota">North Dakota</option>
+        <option value="Ohio">Ohio</option>
+        <option value="Oklahoma">Oklahoma</option>
+        <option value="Oregon">Oregon</option>
+        <option value="Pennsylvania">Pennsylvania</option>
+        <option value="Rhode Island">Rhode Island</option>
+        <option value="South Carolina">South Carolina</option>
+        <option value="South Dakota">South Dakota</option>
+        <option value="Tennessee">Tennessee</option>
+        <option value="Texas">Texas</option>
+        <option value="Utah">Utah</option>
+        <option value="Vermont">Vermont</option>
+        <option value="Virginia">Virginia</option>
+        <option value="Washington">Washington</option>
+        <option value="West Virginia">West Virginia</option>
+        <option value="Wisconsin">Wisconsin</option>
+        <option value="Wyoming">Wyoming</option>
+      </select><br>
+
+      <label for="zip">Zip:</label><br>
+      <input type="text" id="zip" name="zip"><br>
+
+      <label for="doa">Date of Appointment:</label><br>
+      <input type="date" id="doa" name="doa"><br>
+
+      <label for="time">Select a Time:</label><br>
+      <input type="time" id="time" name="time"><br>
+
+      <label for="reason">Reason for Appointment:</label><br>
+      <textarea id="reason" name="reason" rows="3" cols="50"></textarea><br>
+
+      <input type="submit" value="Submit" id="submit">
+
+    </form>
+
+  </div>
+</div>
+
+
+
+<div class=" footer">
+  <div class="footer-left">
+    <p>We are in this together
+      we will get through this together</p>
+  </div>
+
+  <div class="footer-end">
+    Copyright © 2022 All Rights Reserved
+  </div>
+  <div class=" footer-right">
+    Follow Us &nbsp;
+    <a href="#blank">	<img src="instagram.png">  &nbsp; </a>
+    <a href="#blank">		<img src="twitter.png"> &nbsp;</a>
+    <a href="#blank">		<img src="facebook.png"> &nbsp;</a>
+
+  </div>
+
+</div>
+</body>
+</html>
