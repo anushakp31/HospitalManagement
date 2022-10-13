@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title>
+  <style>
+
+    html, body {
+      overflow-x: hidden;
+      height: 100%;
+    }
+    body {
+      background: #fff;
+      padding: 0;
+      margin: 0;
+      font-family: 'Varela Round', sans-serif;
+      background-image: url("welcome.jpg");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: center;
+    }
+
+    .header {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
+      box-shadow: none;
+      background-color: white;
+      position: fixed;
+      height: 60px!important;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    input[type="checkbox"]:checked ~ #sidebarMenu {
+      transform: translateX(0);
+    }
+
+    input[type=checkbox] {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      display: none;
+    }
+
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(135deg);
+      margin-top: 8px;
+    }
+    input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(-135deg);
+      margin-top: -9px;
+    }
+    @media screen and (max-width: 500px) {
+      body {width: 100%;}
+
+    }
+  </style>
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+<div class="header">
+
+  <div class="header">
+
+    <a href="index.html" class="logo"> <img src="logo.png" height="50" width="60"></a>
+    <a href="index.html" class="name" style="font-family:Brush Script MT ; font-size: 25px">AngelCare Hospital</a>
+
+    <div class="header-right">
+
+      <a href="index.html" class="onHover">Home</a>
+      <a href="about.html" class="onHover">About</a>
+      <a href="login.html" class="onHover">Login</a>
+      <a href="newuser.html" class="onHover">Register</a>
+      <a href="locations.html" class="onHover">Location</a>
+    </div>
+</div>
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+  <div class="spinner diagonal part-1"></div>
+  <div class="spinner horizontal"></div>
+  <div class="spinner diagonal part-2"></div>
+</label>
+<div id="sidebarMenu">
+  <ul class="sidebarMenuInner">
+    <li><a href="#" target="_blank">Username</a></li>
+    <li><a href="#" target="_blank">Dashboard</a></li>
+    <li><a href="#" target="_blank">Settings</a></li>
+    <li><a href="#" target="_blank">Appointments</a></li>
+    <li><a href="#" target="_blank">Profile</a></li>
+    <li><a href="#" target="_blank">Feedback</a></li>
+  </ul>
+</div>
+
+  <div class="mainInner">
+    <div>Welcome</div>
+  </div>
+
+  </div>
+</div>
+
+</body>
+</html>
