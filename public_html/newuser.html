@@ -58,8 +58,7 @@
             width: 25%;
             margin: 0px 0px 0px 0px;
             margin-top: 6px;
-            /*margin-right: -268px;*/
-            /*margin-left: 338px;*/
+
         }
 
         .col-75 {
@@ -76,7 +75,6 @@
         }
 
 
-        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
             .col-25, .col-75, input[type=submit] {
                 width: 100%;
@@ -156,6 +154,20 @@
             <input type="radio" id="others1" name="gender" value="others1">
             <label for="others1">Others</label>
             <br>
+            <div  id="timeslots" class="row1 ">
+                <div class="col-25">
+                    <p>Choose your preferred time slots :</p>
+                </div>
+                <div class="col-75">
+                    <input type="checkbox" id="time1" name="time1" value="slot1">
+                    <label for="time1"> 9.30 - 10.30 am</label>
+                    <input type="checkbox" id="time2" name="time1" value="slot2">
+                    <label for="time2"> 10.30 - 11.30 am</label>
+                    <input type="checkbox" id="time3" name="time1" value="slot3">
+                    <label for="time3"> 11.30 - 12.30 am</label>
+                </div>
+            </div>
+            <br>
             <div  class="row1 ">
                 <div class="col-25">
                     <label for="dob1">Date of Birth:</label>
@@ -199,7 +211,7 @@
                     <label for="zip1">Zip:</label>
                 </div>
                 <div class="col-75">
-                    <input type="number" id="zip1" name="zip1">
+                    <input style="width: 45%" pattern="[0-9]{5}" type="text" id="zip1" name="zip1" required>
                 </div>
             </div>
             <br>
@@ -310,7 +322,6 @@
                     <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{9,}" title="First letter should be in upper case and must contain a number, a lowercase letter,a special character and more than 8 characters" required>
                     <div id="newUserMessage">
                         <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
                         <p id="number" class="invalid">A <b>number</b></p>
                         <p id="length" class="invalid">Minimum <b>8 characters</b></p>
                         <p id="case" class="invalid">A <b>capital first letter</b></p>
@@ -339,30 +350,33 @@
 
                     <div class="col-75">
                         <select name="healthInsurance" id="healthInsuranceNames" style="width: 43%">
-                            <option value="null">Select state</option>
+                            <option value="null">Select name</option>
                             <option value="Blue Cross Blue Shield">Blue Cross Blue Shield</option>
                             <option value="Apollo">Apollo</option>
                             <option value="Star Health">Star Health</option>
                             <option value="Blue Fin">Blue Fin</option>
                         </select>
                     </div>
+                </div><br>
+                <div  class="row1 ">
+                    <div class="col-25">
+                        <label>Any prior ailments/allergies? <br>[Any other comments]:</label>
+                    </div>
+                    <br>
+
+                    <div class="col-75">
+                        <textarea id="comment" name="commentBox" rows="4" cols="80" maxlength="20"></textarea></div>
                 </div>
+                <br>
+
+
             </div>
-            <input type="submit" name="Plog" id="Plog" value="Sign Up"><br>
-            <script src="formValidations.js">
+            <input type="submit" name="Plog" id="Plog" style="width: 30% ; float: none" value="Sign Up"><br>
+            <script src="main.js">
             </script>
         </form>
 
-<!--        <script>-->
-<!--            function validateregistrationForm() {-->
-<!--                let x = document.forms["registrationForm"]["newName"].value;-->
-<!--                let y = document.forms["registrationForm"]["newPassword"].value;-->
-<!--                if ((x == "") ||(y=="")) {-->
-<!--                    alert("Please fill out all the fields");-->
-<!--                    return false;-->
-<!--                }-->
-<!--            }-->
-<!--        </script>-->
+
     </div>
 </div>
 <div class=" footer">
