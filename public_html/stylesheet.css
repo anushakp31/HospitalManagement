@@ -117,6 +117,7 @@ a {
 
 .parent:hover .child:before, .parent:focus .child:before {
     display: block;
+
 }
 
 .parent:hover a, .parent:focus a {
@@ -789,7 +790,44 @@ input[type=button]:hover {
     margin-top: 3px;
 }
 
+#newUserMessage,#newUserPhone, #newEmail {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 5px;
+    margin-top: 10px;
+}
 
+#newUserMessage p,#newUserPhone p,#newEmail p {
+    padding: 5px 20px;
+    font-size: 10px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: '\2713';
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "\274C";
+}
+#optionBased{
+    display: none;
+}
 
 
 

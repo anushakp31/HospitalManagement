@@ -34,15 +34,15 @@
 	<h2><center>Doctor Login</center></h2>
 	<img src="docimg.png" id="imgpat"/>
 	
-    <form method="get" action="#">    
+    <form method="post" action="user.html">
         
 		<label>Doctor Id:</label><br>
-        <input type="text" name="DocId" id="Docid" placeholder="Doctor ID"><br>   
+        <input type="number" required style="width: 100%;" name="DocId" id="Docid" placeholder="Doctor ID" required><br>
         
 		<label>Password:</label><br> 
-        <input type="Password" name="Pwd" id="Pwd" placeholder="Password"><br>   
+        <input type="Password" name="Pwd" id="Pwd" placeholder="Password" required><br>
         
-		<input type="button" id="Dlog" value="Log In"><br>   
+		<input type="submit" id="Dlog" value="Log In"><br>
         
 		<input type="checkbox" id="check">    
         <span style="float:left;">Remember me &nbsp </span>

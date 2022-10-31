@@ -34,13 +34,13 @@
 	<h2><center>Patient Login</center></h2>
 	<img src="patimg.png" id="imgdoc"/>
 	
-    <form method="get" action="user.html ">
+    <form method="post" name="patientLoginForm" action="user.html" onsubmit="return validatePatientLoginForm()" >
         
 		<label>User Name:</label><br>    
-        <input type="text" name="Un" id="Un" placeholder="Username"><br>   
+        <input type="text" name="patientName" id="Un" placeholder="Username"><br>
         
 		<label>Password:</label><br> 
-        <input type="Password" name="Pw" id="Pw" placeholder="Password"><br>   
+        <input type="Password" name="patientPassword" id="Pw" placeholder="Password"><br>
         
 		<input type="submit" name="Plog" id="Plog" value="Log In"><br>
         <br>
@@ -53,8 +53,19 @@
         <hr>
         <p> New Patient?! &nbsp <a href="newuser.html">Register </a>
         <hr>
-    </form>     
-</div>
+    </form>
+        <script>
+            function validatePatientLoginForm() {
+                let x = document.forms["patientLoginForm"]["patientName"].value;
+                let y = document.forms["patientLoginForm"]["patientPassword"].value;
+                if ((x == "") ||(y=="")) {
+                    alert("Please fill out all the fields");
+                    return false;
+                }
+            }
+        </script>
+
+    </div>
 </div>
 <div class=" footer">
     <div class="footer-left">
